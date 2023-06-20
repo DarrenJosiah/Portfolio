@@ -1,0 +1,87 @@
+[
+    {
+        "name": "HTML",
+        "confidence": "95%",
+        "type": "Frontend"
+    },
+    {
+        "name": "CSS",
+        "confidence": "90%",
+        "type": "Frontend"
+    },
+    {
+        "name": "Bootstrap",
+        "confidence": "80%",
+        "type": "Frontend"
+    },
+    {
+        "name": "Tailwind",
+        "confidence": "80%",
+        "type": "Frontend"
+    },
+    {
+        "name": "JavaScript",
+        "confidence": "70%",
+        "type": "Frontend"
+    },
+    {
+        "name": "TypeScript",
+        "confidence": "70%",
+        "type": "Frontend"
+    },
+    {
+        "name": "Angular",
+        "confidence": "70%",
+        "type": "Frontend"
+    },
+    {
+        "name": "React",
+        "confidence": "40%",
+        "type": "Frontend"
+    },
+    {
+        "name": "Django",
+        "confidence": "10%",
+        "type": "Frontend"
+    },
+    {
+        "name": "Java",
+        "confidence": "80%",
+        "type": "Backend"
+    },
+    {
+        "name": "Spring Boot",
+        "confidence": "20%",
+        "type": "Backend"
+    },
+    {
+        "name": "Python",
+        "confidence": "30%",
+        "type": "Backend"
+    },
+    {
+        "name": "C++",
+        "confidence": "20%",
+        "type": "Backend"
+    },
+    {
+        "name": "C",
+        "confidence": "20%",
+        "type": "Backend"
+    },
+    {
+        "name": "VBA",
+        "confidence": "10%",
+        "type": "Backend"
+    },
+    {
+        "name": "MySQL",
+        "confidence": "70%",
+        "type": "Database"
+    },
+    {
+        "name": "Oracle SQL",
+        "confidence": "20%",
+        "type": "Database"
+    }
+]

@@ -1,0 +1,11 @@
+Command Used:
+
+Three.js:
+npm i three
+npm i @react-three/fiber
+npm i @react-three/drei
+npm i @react-three/postprocessing
+
+Chart.js:
+npm i chart.js
+npm i react-chartjs-2
