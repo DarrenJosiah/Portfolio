@@ -120,7 +120,7 @@ function Tech() {
         return ( item.type === 'Frontend' &&
           <div className='max-w-fit bg-gray-100 p-5 rounded-xl m-3'>
             {/* Name */}
-            <div className="mb-1 text-base font-medium text-purple-700 dark:text-purple-500">
+            <div className="mb-1 text-base font-medium ">
               { item.name }
             </div>
             {/* Bar */}
