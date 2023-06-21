@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2';
+import { motion } from "framer-motion"
+
+import '../App.css';
 
 // Register item
 ChartJS.register(
   ArcElement, Tooltip, Legend
 )
+
 
 export const skillsJson = [
   {
@@ -130,15 +134,29 @@ function Tech() {
   }
 
   return (
-    <div className='bg-slate-50 font-trispace h-[90vh]'>
+    <div className='tech-container font-trispace h-[90vh]'>
       <p className='font-trispace p-8'>TECH</p>
       
-      <p className='font-trispace text-xl font-bold p-8'>FRONT-END</p>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition= {{ duration: 0.7 }}
+        className='font-trispace text-xl p-8'
+      >FRONT-END</motion.div>
+      
       <div className='flex flex-row flex-wrap justify-evenly'>
       {/* Frontend Cards */}
-      { skillsJson.map(item => {
+      { skillsJson.map((item, index) => {
         return ( item.type === 'Frontend' &&
-          <div className=''>
+          <motion.div
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition= {{ duration: 0.3 + index/8 }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+          >
             {/* Icon */}
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
@@ -156,7 +174,7 @@ function Tech() {
                 <div className={`bg-gray-900 h-2.5 rounded-full dark:bg-purple-500 ${ item.confidenceTailwindCSS }`}></div>
               </div>
             </div>
-          </div>
+          </motion.div>
         )
       }) }
       </div>
@@ -209,6 +227,7 @@ function Tech() {
         
         {/* https://www.chartjs.org/docs/latest/getting-started/ */}
         {/* Parallax scrolling */}
+        {/* https://www.youtube.com/watch?v=UgIwjLg4ONk */}
       </div>
     </div>
   )

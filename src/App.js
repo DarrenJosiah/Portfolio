@@ -12,9 +12,9 @@ import Connect from './components/Connect';
 function App() {
   return (
     <div className="App font-shareTech m-3">
-      {/* <Navbar/> */}
-      {/* <Home /> */}
-      {/* <Education /> */}
+      <Navbar/>
+      <Home />
+      <Education />
       <Tech />
       <Experience />
       <Works />
