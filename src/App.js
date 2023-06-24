@@ -13,16 +13,16 @@ import AboutMe from './components/AboutMe';
 function App() {
   return (
     <div className="App font-shareTech m-3">
-      <Connect />
       <Navbar/>
       <Home />
       <Tech />
       <Education />
       <Experience />
-      <Works />
+      {/* <Works /> */}
       {/* // TODO - ParticleJS */}
       {/* TODO - Parallex scroll effect */}
       <AboutMe />
+      <Connect />
     </div>
   );
 }
