@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-three/drei": "^9.70.0",
     "@react-three/fiber": "^8.13.0",
     "@react-three/postprocessing": "^2.14.7",
@@ -14,6 +19,7 @@
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.1",
     "react-scripts": "5.0.1",
     "three": "^0.152.2",
     "web-vitals": "^2.1.4"

@@ -41,7 +41,7 @@ function Education() {
   }
 
   return (
-    <div className='bg-yellow-400 h-auto ww relative'>
+    <div className='education-container h-auto ww relative'>
       <p className='font-trispace text-xl p-8'>EDUCATION</p>
 
       {/* Cat GIF */}

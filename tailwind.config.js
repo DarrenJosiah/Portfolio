@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         shareTech: ["Share Tech", "sans-serif"],
         trispace: ["Trispace", "sans-serif"],
+        spaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
     },
   },

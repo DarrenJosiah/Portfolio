@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2';
 import { motion } from "framer-motion"
-
 import '../App.css';
 
 // Register item
 ChartJS.register(
   ArcElement, Tooltip, Legend
 )
-
 
 export const skillsJson = [
   {
@@ -74,88 +72,131 @@ export const skillsJson = [
       "confidenceTailwindCSS": "w-[10%]",
       "type": "Frontend",
       "iconPath": "/MyImages/Tech/django.png"
-  },
-  {
+    },
+    {
       "name": "Java",
       "confidence": 80,
-      "type": "Backend"
+      "confidenceTailwindCSS": "w-[80%]",
+      "type": "Backend",
+      "iconPath": "/MyImages/Tech/java.png"
   },
   {
       "name": "Spring Boot",
       "confidence": 20,
-      "type": "Backend"
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Backend",
+      "iconPath": "/MyImages/Tech/springboot.png"
   },
   {
       "name": "Python",
-      "confidence": 30,
-      "type": "Backend"
+      "confidence": 20,
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Backend",
+      "iconPath": "/MyImages/Tech/python.png"
   },
   {
       "name": "C++",
       "confidence": 20,
-      "type": "Backend"
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Backend",
+      "iconPath": "/MyImages/Tech/c++.png"
   },
   {
       "name": "C",
       "confidence": 20,
-      "type": "Backend"
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Backend",
+      "iconPath": "/MyImages/Tech/c.png"
   },
   {
       "name": "VBA",
       "confidence": 10,
-      "type": "Backend"
+      "confidenceTailwindCSS": "w-[10%]",
+      "type": "Backend",
+      "iconPath": "/MyImages/Tech/vba.png"
   },
   {
       "name": "MySQL",
       "confidence": 70,
-      "type": "Database"
+      "confidenceTailwindCSS": "w-70%]",
+      "type": "Database",
+      "iconPath": "/MyImages/Tech/mysql.png"
   },
   {
       "name": "Oracle SQL",
       "confidence": 20,
-      "type": "Database"
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Database",
+      "iconPath": "/MyImages/Tech/oraclesql.png"
   }
 ]
 
 function Tech() {
+    
+  // ChartJS
+  // const data = {
+  //   labels: ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'JavaScript'],
+  //   datasets: [{
+  //     data: [95,5],
+  //     backgroundColor: ['#EA580C', '#F8FAFC'],
+  //     borderColor: ['#EA580C', 'black'],
+  //   }]
+  // }
 
-    // TODO - ParticleJS
-    // Framer
-    // https://www.framer.com/motion/scroll-animations/
-    // Inspiration https://transforms.framer.wiki/
-
-  const data = {
-    labels: ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'JavaScript'],
-    datasets: [{
-      data: [95,5],
-      backgroundColor: ['#EA580C', '#F8FAFC'],
-      borderColor: ['#EA580C', 'black'],
-    }]
+  // Text animation
+  const sentence = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        staggerChildren: 0.07,
+      },
+    },
+  }
+  const letter = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
   }
 
   return (
-    <div className='tech-container font-trispace h-[90vh]'>
-      <p className='font-trispace p-8'>TECH</p>
-      
+    <div  className='tech-container font-spaceGrotesk h-auto pb-5'>
+      <p className='p-8'>TECH</p>
+     
+      {/* FRONT-END */}
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition= {{ duration: 0.7 }}
-        className='font-trispace text-xl p-8'
-      >FRONT-END</motion.div>
-      
-      <div className='flex flex-row flex-wrap justify-evenly'>
-      {/* Frontend Cards */}
+        variants={sentence}
+        initial='hidden'
+        whileInView='visible'
+        className='text-2xl p-8'
+      >
+        {'FRONT-END'.split('').map((char, index) => {
+          return (
+            <motion.span
+
+              key={char + '-' + index}
+              variants={letter}
+            >{char}</motion.span>
+          )
+        })}
+      </motion.div>
+
+      <div className='flex flex-row flex-wrap justify-center mb-28'>
+      {/* Cards */}
       { skillsJson.map((item, index) => {
         return ( item.type === 'Frontend' &&
           <motion.div
-            initial={{ opacity: 0, x: -10 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition= {{ duration: 0.3 + index/8 }}
+            transition= {{ duration: 0.1 + index/15 }}
             whileHover={{
               scale: 1.1,
               transition: { duration: 0.1 },
             }}
+            whileTap={{ scale: 0.9 }}
           >
             {/* Icon */}
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
@@ -165,7 +206,20 @@ function Tech() {
               
               {/* Name */}  
               <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
-                { item.name }
+                <motion.div
+                  variants={sentence}
+                  initial='hidden'
+                  whileInView='visible'
+                >
+                  {  item.name .split('').map((char, index) => {
+                    return (
+                      <motion.span
+                        key={char + '-' + index}
+                        variants={letter}
+                      >{char}</motion.span>
+                    )
+                  })}
+                </motion.div>
               </div>
               
               {/* Bar */}
@@ -178,8 +232,142 @@ function Tech() {
         )
       }) }
       </div>
+
+      {/* BACK-END */}
+      <motion.div
+        variants={sentence}
+        initial='hidden'
+        whileInView='visible'
+        className='text-2xl p-8'
+      >
+        {'BACK-END'.split('').map((char, index) => {
+          return (
+            <motion.span
+              key={char + '-' + index}
+              variants={letter}
+            >{char}</motion.span>
+          )
+        })}
+      </motion.div>
       
-      <div className='flex flex-row justify-evenly items-center'>
+      <div className='flex flex-row flex-wrap justify-center mb-28'>
+      {/* Cards */}
+      { skillsJson.map((item, index) => {
+        return ( item.type === 'Backend' &&
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition= {{ duration: 0.1 + index/15 }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            {/* Icon */}
+            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            
+            {/* Card */}
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[20vw]'>
+              
+              {/* Name */}  
+              <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
+                <motion.div
+                  variants={sentence}
+                  initial='hidden'
+                  whileInView='visible'
+                >
+                  {  item.name .split('').map((char, index) => {
+                    return (
+                      <motion.span
+                        key={char + '-' + index}
+                        variants={letter}
+                      >{char}</motion.span>
+                    )
+                  })}
+                </motion.div>
+              </div>
+              
+              {/* Bar */}
+              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5 dark:bg-gray-700">
+                {/* <div className='bg-purple-100 h-2.5 rounded-full dark:bg-purple-500 w-[25%]'></div> */}
+                <div className={`bg-gray-900 h-2.5 rounded-full dark:bg-purple-500 ${ item.confidenceTailwindCSS }`}></div>
+              </div>
+            </div>
+          </motion.div>
+        )
+      }) }
+      </div>
+
+      {/* DATABASE */}
+       <motion.div
+        variants={sentence}
+        initial='hidden'
+        whileInView='visible'
+        className='text-2xl p-8'
+      >
+        {'DATABASE'.split('').map((char, index) => {
+          return (
+            <motion.span
+              key={char + '-' + index}
+              variants={letter}
+            >{char}</motion.span>
+          )
+        })}
+      </motion.div>
+      
+      
+      <div className='flex flex-row flex-wrap justify-center mb-28'>
+      {/* Cards */}
+      { skillsJson.map((item, index) => {
+        return ( item.type === 'Database' &&
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition= {{ duration: 0.1 + index/15  }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            {/* Icon */}
+            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            
+            {/* Card */}
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[20vw]'>
+              
+              {/* Name */}  
+              <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
+                <motion.div
+                  variants={sentence}
+                  initial='hidden'
+                  whileInView='visible'
+                >
+                  {  item.name .split('').map((char, index) => {
+                    return (
+                      <motion.span
+                        key={char + '-' + index}
+                        variants={letter}
+                      >{char}</motion.span>
+                    )
+                  })}
+                </motion.div>
+              </div>
+              
+              {/* Bar */}
+              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5 dark:bg-gray-700">
+                {/* <div className='bg-purple-100 h-2.5 rounded-full dark:bg-purple-500 w-[25%]'></div> */}
+                <div className={`bg-gray-900 h-2.5 rounded-full dark:bg-purple-500 ${ item.confidenceTailwindCSS }`}></div>
+              </div>
+            </div>
+          </motion.div>
+        )
+      }) }
+      </div>
+ 
+      
+      {/* <div className='flex flex-row justify-center items-center'> */}
         {/* <div className=''>
           <Doughnut data={data}></Doughnut>
         </div> */}
@@ -228,7 +416,7 @@ function Tech() {
         {/* https://www.chartjs.org/docs/latest/getting-started/ */}
         {/* Parallax scrolling */}
         {/* https://www.youtube.com/watch?v=UgIwjLg4ONk */}
-      </div>
+      {/* </div> */}
     </div>
   )
 }
