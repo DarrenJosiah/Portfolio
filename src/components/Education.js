@@ -1,6 +1,22 @@
 import React, { useEffect, useState } from 'react'
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 function Education() {
+
+  // Tracking Cursor
+  const x = useMotionValue(200);
+  const y = useMotionValue(200);
+
+  const rotateX = useTransform(y, [0, 400], [20, -20]);
+  const rotateY = useTransform(x, [0, 400], [-20, 20]);
+
+  function handleMouse(event) {
+      const rect = event.currentTarget.getBoundingClientRect();
+
+      x.set(event.clientX - rect.left);
+      y.set(event.clientY - rect.top);
+  }
+
 
   // TODO - Add animations (fly in) when scroll
 
@@ -41,8 +57,8 @@ function Education() {
   }
 
   return (
-    <div className='education-container h-auto ww relative'>
-      <p className='font-trispace text-xl p-8'>EDUCATION</p>
+    <div className='education-container font-spaceGrotesk h-auto relative'>
+      <p className='text-xl p-8'>EDUCATION</p>
 
       {/* Cat GIF */}
       <p className='text-7xl absolute z-10' style={{ top: `${upDownNumber}rem`, left: `${leftRightNumber}rem` }}>
@@ -78,9 +94,14 @@ function Education() {
       </div>
 
       {/* Cards */}
-      <div className='flex flex-row justify-evenly'>
+      <div className='flex flex-row justify-evenly h-auto place-items-center place-content-center'
+        style={{ perspective: 1000 }}
+        onMouseMove={ handleMouse }
+      >
         {/* Diploma */}
-        <div className="font-shareTech bg-white max-w-sm rounded-xl overflow-hidden shadow-xl hover:max-w-xl ease-in duration-300">
+        <motion.div className="bg-white max-w-xs rounded-xl overflow-hidden shadow-xl"
+          style={{ rotateX: rotateX, rotateY: rotateY }}
+        >
           <div className="flex flex-col justify-between p-4">
             
             {/* Picture */}
@@ -93,9 +114,11 @@ function Education() {
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">3rd Prize in SP Software & Product Design Contest 2016</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Invented 'Automated Bookshelf' by utilizing Arduino, Raspberry Pi, MakerBot, and IoT for Final Year Project</p>
           </div>
-        </div>
+        </motion.div>
         {/* Degree */}
-        <div className="font-shareTech bg-white max-w-sm rounded-xl overflow-hidden shadow-xl hover:max-w-xl ease-in duration-300 underlining">
+        <motion.div className="bg-white max-w-xs rounded-xl overflow-hidden shadow-xl"
+          style={{ rotateX: rotateX, rotateY: rotateY }}
+          >
           <div className="flex flex-col justify-between p-4">
             
             {/* Picture */}
@@ -106,15 +129,15 @@ function Education() {
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bachelor of Business Management</h5>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Studied Information System, Statistics, Stakeholders Management, Ethics</p>
           </div>
-        </div>
+        </motion.div>
       </div>
       
-      <p className='font-trispace text-xl p-8'>CERTIFICATION</p>
+      <p className='text-xl p-8'>CERTIFICATION</p>
       
      
       {/* Course */}
       <div className='flex flex-row justify-evenly pb-12'>
-          <div className="font-shareTech bg-white max-w-sm rounded-xl overflow-hidden shadow-xl hover:max-w-xl ease-in duration-300">
+          <div className="bg-white max-w-xs rounded-xl overflow-hidden shadow-xl">
             <div className="flex flex-col justify-between p-4">
 
               {/* Picture */}
