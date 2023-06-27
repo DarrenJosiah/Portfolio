@@ -81,25 +81,25 @@ a {
 }
 @keyframes spin_words {
   0% {
-    transform: translateY(0%);
+    transform: translateY(1%);
   }
   20% {
-    transform: translateY(0%);
+    transform: translateY(1%);
   }
   30% {
-    transform: translateY(-100%);
+    transform: translateY(-95%);
   }
   50% {
-    transform: translateY(-100%);
+    transform: translateY(-95%);
   }
   60% {
-    transform: translateY(-200%);
+    transform: translateY(-195%);
   }
   80% {
-    transform: translateY(-200%);
+    transform: translateY(-195%);
   }
   90% {
-    transform: translateY(-200%);
+    transform: translateY(-195%);
   }
   100% {
     transform: translateY(-300%);

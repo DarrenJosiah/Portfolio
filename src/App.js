@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App font-shareTech sm:m-3 sm:mb-0">
+    <div className="App font-shareTech">
       <Navbar/>
       <Home />
       <Tech />

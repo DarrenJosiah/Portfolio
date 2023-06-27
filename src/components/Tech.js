@@ -202,7 +202,7 @@ function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
               
               {/* Name */}  
               <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
@@ -210,6 +210,7 @@ function Tech() {
                   variants={sentence}
                   initial='hidden'
                   whileInView='visible'
+                  className='flex no-wrap'
                 >
                   {  item.name .split('').map((char, index) => {
                     return (
@@ -268,7 +269,7 @@ function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
               
               {/* Name */}  
               <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
@@ -276,6 +277,7 @@ function Tech() {
                   variants={sentence}
                   initial='hidden'
                   whileInView='visible'
+                  className='flex no-wrap'
                 >
                   {  item.name .split('').map((char, index) => {
                     return (
@@ -335,7 +337,7 @@ function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
               
               {/* Name */}  
               <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
@@ -343,6 +345,8 @@ function Tech() {
                   variants={sentence}
                   initial='hidden'
                   whileInView='visible'
+                  className='flex no-wrap'
+
                 >
                   {  item.name .split('').map((char, index) => {
                     return (
