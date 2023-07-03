@@ -110,9 +110,47 @@ a {
   background: linear-gradient(145deg, var(--tw-bg-slate-100), var(--tw-bg-slate-200));
 }
 .education-container {
-  background: linear-gradient(145deg, var(--tw-bg-sky-700), var(--tw-bg-blue-950));
+  background: linear-gradient(35deg, var(--tw-bg-slate-100), var(--tw-bg-slate-200));
+
+  /* background-color: whitesmoke; */
+  /* background: linear-gradient(145deg, var(--tw-bg-sky-700), var(--tw-bg-blue-950)); */
 }
 
+/* Education */
+/* Parallax */
+.parallax {
+    /* The image used */
+    background-image: url("../public/MyImages/sp.png");
+
+    /* Set a specific height */
+    min-height: 20vh;
+    /* max-width: 50vw; */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 32vh;
+    /* background-size: cover; */
+}
+
+/* Overlapping Wrapper */
+.rotated-container-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.rotated-container {
+  width: 120vw; /* Set the desired width */
+  height: 100%;
+  transform: rotate(14deg);
+  transform-origin: top left
+}
+
+ 
 /* Connect */
 /* Drawing animation */
 line {

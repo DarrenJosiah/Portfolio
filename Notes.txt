@@ -20,8 +20,14 @@ npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/react-fontawesome@latest
 
+Particle:
+npm i react-particles
+npm i react-tsparticles // Typescript versiona
+npm i tsparticles
 
 Inspirations:
 https://transforms.framer.wiki/
 https://www.vouscon.com/
 https://www.vouschurch.com/
+https://delassus.com/en/products/tomatoes
+https://toyfight.co/
