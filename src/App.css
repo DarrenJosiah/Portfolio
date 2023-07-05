@@ -118,9 +118,9 @@ a {
 
 /* Education */
 /* Parallax */
-.parallax {
+.parallaxAvensys {
     /* The image used */
-    background-image: url("../public/MyImages/sp.png");
+    background-image: url("../public/MyImages/avensys.svg");
 
     /* Set a specific height */
     min-height: 20vh;
@@ -132,6 +132,51 @@ a {
     background-repeat: no-repeat;
     background-size: 32vh;
     /* background-size: cover; */
+}
+.parallaxJFS {
+    /* The image used */
+    background-image: url("../public/MyImages/certificate.png");
+
+    /* Set a specific height */
+    min-height: 20vh;
+    /* max-width: 50vw; */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: 42vh;
+    /* background-size: cover; */
+}
+.parallaxRMIT {
+    /* The image used */
+    background-image: url("../public/MyImages/rmit.png");
+
+    /* Set a specific height */
+    min-height: 20vh;
+    /* max-width: 50vw; */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: 32vh;
+    /* background-size: cover; */
+}
+.parallaxSP {
+  /* The image used */
+  background-image: url("../public/MyImages/sp.png");
+
+  /* Set a specific height */
+  min-height: 20vh;
+  /* max-width: 50vw; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: 32vh;
+  /* background-size: cover; */
 }
 
 /* Overlapping Wrapper */
