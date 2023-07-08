@@ -14,21 +14,21 @@ import Play from './components/Play';
 function App() {
   return (
     <div className="App font-shareTech w-[100vw]">
+      <Play />
       {/* <Navbar/> */}
       {/* <Home /> */}
-      <Tech />
+      {/* <Tech /> */}
       <Education />
-      <Works />
+      {/* <Works /> */}
       {/* // TODO - ParticleJS */}
       {/* TODO - Parallex scroll effect */}
       {/* TODO - div tilts changes with mouse
         https://framerbook.com/animation/example-animations/26-tracking-the-cursor/
        */}
 
-      <AboutMe />
-      <Play />
-      <Connect />
-      <Footer />
+      {/* <AboutMe /> */}
+      {/* <Connect /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

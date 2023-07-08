@@ -2,7 +2,16 @@ import React from 'react'
 
 function Footer() {
   return (
-    <p className='text-white bg-black font-spaceGrotesk'>DARREN JOSIAH CHUA YU XIAN © 2023</p>
+    <div class="marquee font-spaceGrotesk text-white bg-black">
+      <div class="marquee__inner">
+        <span>
+          Darren Josiah Chua Yu Xian © 蔡育贤 © ダーレン © 2023
+          Darren Josiah Chua Yu Xian © 蔡育贤 © ダーレン © 2023
+          Darren Josiah Chua Yu Xian © 蔡育贤 © ダーレン © 2023  
+          Darren Josiah Chua Yu Xian © 蔡育贤 © ダーレン © 2023
+        </span>
+      </div>
+    </div>
   )
 }
 

@@ -79,3 +79,8 @@ function Education() {
 }
 
 export default Education
+
+// https://www.youtube.com/watch?v=fM2MA2PTckM
+// https://www.youtube.com/watch?v=UgIwjLg4ONk
+// https://www.react-spring.dev/docs/components/parallax
+// https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/

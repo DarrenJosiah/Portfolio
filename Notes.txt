@@ -13,6 +13,9 @@ npm i react-chartjs-2
 React Framer Motion:
 npm install framer-motion
 
+React Spring Parallax
+
+
 FontAwesome:
 npm i --save @fortawesome/fontawesome-svg-core
 npm i --save @fortawesome/free-brands-svg-icons

@@ -205,7 +205,7 @@ function Tech() {
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
+              <div className="text-left mb-1 text-base font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'
@@ -224,9 +224,9 @@ function Tech() {
               </div>
               
               {/* Bar */}
-              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5 dark:bg-gray-700">
-                {/* <div className='bg-purple-100 h-2.5 rounded-full dark:bg-purple-500 w-[25%]'></div> */}
-                <div className={`bg-gray-900 h-2.5 rounded-full dark:bg-purple-500 ${ item.confidenceTailwindCSS }`}></div>
+              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5">
+                {/* <div className='bg-purple-100 h-2.5 rounded-full w-[25%]'></div> */}
+                <div className={`bg-gray-900 h-2.5 rounded-full ${ item.confidenceTailwindCSS }`}></div>
               </div>
             </div>
           </motion.div>
@@ -272,7 +272,7 @@ function Tech() {
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
+              <div className="text-left mb-1 text-base font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'
@@ -291,9 +291,9 @@ function Tech() {
               </div>
               
               {/* Bar */}
-              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5 dark:bg-gray-700">
-                {/* <div className='bg-purple-100 h-2.5 rounded-full dark:bg-purple-500 w-[25%]'></div> */}
-                <div className={`bg-gray-900 h-2.5 rounded-full dark:bg-purple-500 ${ item.confidenceTailwindCSS }`}></div>
+              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5">
+                {/* <div className='bg-purple-100 h-2.5 rounded-full w-[25%]'></div> */}
+                <div className={`bg-gray-900 h-2.5 rounded-full ${ item.confidenceTailwindCSS }`}></div>
               </div>
             </div>
           </motion.div>
@@ -340,7 +340,7 @@ function Tech() {
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100 dark:text-purple-500">
+              <div className="text-left mb-1 text-base font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'
@@ -360,9 +360,9 @@ function Tech() {
               </div>
               
               {/* Bar */}
-              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5 dark:bg-gray-700">
-                {/* <div className='bg-purple-100 h-2.5 rounded-full dark:bg-purple-500 w-[25%]'></div> */}
-                <div className={`bg-gray-900 h-2.5 rounded-full dark:bg-purple-500 ${ item.confidenceTailwindCSS }`}></div>
+              <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5">
+                {/* <div className='bg-purple-100 h-2.5 rounded-full w-[25%]'></div> */}
+                <div className={`bg-gray-900 h-2.5 rounded-full ${ item.confidenceTailwindCSS }`}></div>
               </div>
             </div>
           </motion.div>
@@ -377,9 +377,9 @@ function Tech() {
         </div> */}
 
           {/* Card */}
-          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">FRONT-END</h5>
-              <div className='font-normal text-gray-700 dark:text-gray-400'>
+          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100-700">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900>FRONT-END</h5>
+              <div className='font-normal text-gray-700'>
 
              
                   
@@ -394,9 +394,9 @@ function Tech() {
               </div>
           </a> */}
           {/* Card */}
-          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">BACK-END</h5>
-              <div className='font-normal text-gray-700 dark:text-gray-400'>
+          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100-700">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900>BACK-END</h5>
+              <div className='font-normal text-gray-700'>
                 <p>Java</p>
                 <p>Spring Boot</p>
                 <p>Python</p>
@@ -405,9 +405,9 @@ function Tech() {
               </div>
           </a> */}
           {/* Card */}
-          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DATABASE</h5>
-              <div className='font-normal text-gray-700 dark:text-gray-400'>
+          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100-700">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900>DATABASE</h5>
+              <div className='font-normal text-gray-700'>
                 <p>MySQL</p>
                 <p>Oracle SQL Developer</p>
               </div>
