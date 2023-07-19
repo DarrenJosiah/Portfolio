@@ -128,6 +128,62 @@ export const skillsJson = [
       "confidenceTailwindCSS": "w-[20%]",
       "type": "Database",
       "iconPath": "/MyImages/Tech/oraclesql.png"
+  },
+  {
+      "name": "Visual Studio Code",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/vscode.png"
+  }, 
+  {
+      "name": "IntelliJ IDEA",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/intellijidea.png"
+  }, 
+  {
+      "name": "Eclipse",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/eclipse.png"
+  }, 
+  {
+      "name": "Git",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/git.png"
+  }, 
+  {
+      "name": "Postman",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/postman.png"
+  }, 
+  {
+      "name": "Swagger UI",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/swaggerui.png"
+  }, 
+  {
+      "name": "Chrome DevTools",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/chromedevtools.png"
+  }, 
+  {
+      "name": "WinSCP",
+      "confidence": null,
+      "confidenceTailwindCSS": null,
+      "type": "Tools",
+      "iconPath": "/MyImages/Tech/winscp.png"
   }
 ]
 
@@ -166,7 +222,7 @@ function Tech() {
     <div  className='tech-container font-spaceGrotesk h-auto pb-5'>
       <p className='p-8'>TECH</p>
      
-      {/* FRONT-END */}
+      {/* FRONT-END - Title */}
       <motion.div
         variants={sentence}
         initial='hidden'
@@ -183,9 +239,8 @@ function Tech() {
           )
         })}
       </motion.div>
-
+      {/* FRONT-END - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      {/* Cards */}
       { skillsJson.map((item, index) => {
         return ( item.type === 'Frontend' &&
           <motion.div
@@ -234,7 +289,7 @@ function Tech() {
       }) }
       </div>
 
-      {/* BACK-END */}
+      {/* BACK-END - Title */}
       <motion.div
         variants={sentence}
         initial='hidden'
@@ -250,9 +305,8 @@ function Tech() {
           )
         })}
       </motion.div>
-      
+      {/* BACK-END - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      {/* Cards */}
       { skillsJson.map((item, index) => {
         return ( item.type === 'Backend' &&
           <motion.div
@@ -301,7 +355,7 @@ function Tech() {
       }) }
       </div>
 
-      {/* DATABASE */}
+      {/* DATABASE - Title */}
        <motion.div
         variants={sentence}
         initial='hidden'
@@ -317,10 +371,8 @@ function Tech() {
           )
         })}
       </motion.div>
-      
-      
+      {/* DATABASE - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      {/* Cards */}
       { skillsJson.map((item, index) => {
         return ( item.type === 'Database' &&
           <motion.div
@@ -363,6 +415,67 @@ function Tech() {
               <div className="mb-5 w-full bg-purple-300 rounded-full h-2.5">
                 {/* <div className='bg-purple-100 h-2.5 rounded-full w-[25%]'></div> */}
                 <div className={`bg-gray-900 h-2.5 rounded-full ${ item.confidenceTailwindCSS }`}></div>
+              </div>
+            </div>
+          </motion.div>
+        )
+      }) }
+      </div>
+ 
+      {/* TOOLS - Title */}
+       <motion.div
+        variants={sentence}
+        initial='hidden'
+        whileInView='visible'
+        className='text-2xl p-8'
+      >
+        {'TOOLS'.split('').map((char, index) => {
+          return (
+            <motion.span
+              key={char + '-' + index}
+              variants={letter}
+            >{char}</motion.span>
+          )
+        })}
+      </motion.div>
+      {/* TOOLS - Cards */}
+      <div className='flex flex-row flex-wrap justify-center mb-28'>
+      { skillsJson.map((item, index) => {
+        return ( item.type === 'Tools' &&
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition= {{ duration: 0.1 + index/15  }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            {/* Icon */}
+            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            
+            {/* Card */}
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
+              
+              {/* Name */}  
+              <div className="text-left mb-1 text-base font-medium text-gray-100">
+                <motion.div
+                  variants={sentence}
+                  initial='hidden'
+                  whileInView='visible'
+                  className='flex no-wrap'
+
+                >
+                  {  item.name .split('').map((char, index) => {
+                    return (
+                      <motion.span
+                        key={char + '-' + index}
+                        variants={letter}
+                      >{char}</motion.span>
+                    )
+                  })}
+                </motion.div>
               </div>
             </div>
           </motion.div>
