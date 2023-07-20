@@ -59,17 +59,6 @@ function Education() {
         </div>
       </div>
      
- 
-      {/* TW Colors */}
-      {/* <div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-      <div class="h-14 bg-gradient-to-r from-sky-500 to-indigo-500"></div>
-      <div class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
-      <div class="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div> */}
-
-      {/* Buffer UI Container */}
-      <div class="h-[100vh] bg-gradient-to-r from-rose-500 to-red-500 py-4 px-32">
-      </div>
-
       {/* CONFETTI  */}
       {/* Middle of screen has a gif? */}
       {/* Frame motion has a joystick? */}
