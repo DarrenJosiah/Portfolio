@@ -52,7 +52,8 @@
 a {
   background: linear-gradient(0deg, var(--tw-bg-orange-600),  var(--tw-bg-orange-600)) no-repeat right bottom / 0 var(--bg-h);
   transition: background-size 300ms;
-  --bg-h: 100%;
+  /* Initially --bg-h: 100% but there's a bug from HashLink */
+  --bg-h: 1%;
 }
 a:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);

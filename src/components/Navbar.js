@@ -1,3 +1,5 @@
+import { HashLink } from 'react-router-hash-link';
+
 export default function Navbar() {
   
   // TODO - Scroll to section with React Scroll
@@ -5,8 +7,19 @@ export default function Navbar() {
 
   return (
     <div className='mt-3 mx-3 flex justify-end font-spaceGrotesk p-3 text-xs'>
-        <a href='#tech-container' className='underlining mx-6 hover:font-medium'>TECH</a>
-        <a href='#works' className='underlining mx-6 hover:font-medium'>WORKS</a>
+        <HashLink to='#tech' smooth>
+          <a className='underlining mx-6 hover:font-medium'>TECH</a>
+        </HashLink>
+        <HashLink to='#works' smooth>
+          <a className='underlining mx-6 hover:font-medium'>WORKS</a>
+        </HashLink>
     </div>
+
+    // DBEUG
+
+    //     <div className='mt-3 mx-3 flex justify-end font-spaceGrotesk p-3 text-xs'>
+    //     <a href='#tech-container' className='underlining mx-6 hover:font-medium'>TECH</a>
+    //     <a href='#works' className='underlining mx-6 hover:font-medium'>WORKS</a>
+    // </div>
   )
 }

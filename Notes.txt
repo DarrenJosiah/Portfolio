@@ -17,6 +17,11 @@ React Spring Parallax
 npm i @react-spring/parallax
 npm i react-scroll-parallax
 
+React Router DOM v6.14
+npm i react-router-dom
+React Router Hash Link
+npm i react-router-hash-link
+
 FontAwesome:
 npm i --save @fortawesome/fontawesome-svg-core
 npm i --save @fortawesome/free-brands-svg-icons

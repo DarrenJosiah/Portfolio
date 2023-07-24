@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Navbar from './components/Navbar';
@@ -24,7 +23,7 @@ function App() {
       <Play />
       {/* <Education1 /> this has perspective */}
       {/* <Education /> */}
-      {/* <Works /> */}
+      <Works />
       {/* // TODO - ParticleJS */}
       {/* TODO - Parallex scroll effect */}
       {/* TODO - div tilts changes with mouse

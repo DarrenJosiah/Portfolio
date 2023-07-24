@@ -16,7 +16,7 @@ function Works() {
   }
 
   return (
-    <div className='bg-pink-500 font-spaceGrotesk h-auto pb-32'>
+    <div className='bg-pink-500 font-spaceGrotesk h-auto pb-32' id='works'>
       <p className='p-8'>PERSONAL PROJECTS</p>
       
       <div className='flex flex-row w-auto h-auto place-items-center place-content-center'
