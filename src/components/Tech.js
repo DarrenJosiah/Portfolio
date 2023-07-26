@@ -219,7 +219,7 @@ function Tech() {
   }
 
   return (
-    <div className='tech-container font-spaceGrotesk h-auto pb-5' id='tech'>
+    <div className='tech-container font-spaceGrotesk pb-5' id='tech'>
       <p className='p-8'>TECH</p>
      
       {/* FRONT-END - Title */}

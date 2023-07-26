@@ -14,25 +14,46 @@ import SpringParallaxSticky from './components/SpringParallaxSticky';
 
 function App() {
   return (
-    <div className="App font-shareTech w-[100vw]">
+    ///// <div className="App font-shareTech w-[100vw]">
+    //   <Navbar/>
+    //   <Home />
+    //   <Tech />
+    //   {/* <SpringParallaxSticky /> */}
+    //   <Play />
+    //   {/* <Education1 /> this has perspective */}
+    //   {/* <Education /> */}
+    //   <Works />
+    //   {/* // TODO - ParticleJS */}
+    //   {/* TODO - Parallex scroll effect */}
+    //   {/* TODO - div tilts changes with mouse
+    //     https://framerbook.com/animation/example-animations/26-tracking-the-cursor/
+    //    */}
 
-      <Navbar/>
-      <Home />
-      <Tech />
-      {/* <SpringParallaxSticky /> */}
-      <Play />
-      {/* <Education1 /> this has perspective */}
-      {/* <Education /> */}
-      <Works />
-      {/* // TODO - ParticleJS */}
-      {/* TODO - Parallex scroll effect */}
-      {/* TODO - div tilts changes with mouse
-        https://framerbook.com/animation/example-animations/26-tracking-the-cursor/
-       */}
+    //   <AboutMe />
+    //   <Connect />
+    //   <Footer />
+    // </div>
 
-      <AboutMe />
-      <Connect />
-      <Footer />
+
+    // https://tailwindcss.com/docs/scroll-snap-align#snapping-to-the-start
+
+    <div className="App font-shareTech h-screen overflow-y-scroll snap-y">
+      <section className='h-auto snap-start'>
+        <Navbar/>
+        <Home />
+      </section>
+      <section className='h-auto snap-start'>
+          <h2>Section two</h2>
+          
+      </section>
+      <section className='h-auto snap-start'>
+        <Tech/>
+      </section>
+      <section className='h-auto snap-start'>
+        {/* <AboutMe /> */}
+        <Connect />
+        <Footer />
+      </section>
     </div>
   );
 }

@@ -9,7 +9,8 @@ function Home() {
         <Model />
 
         {/* Description */}
-        <div className='w-[25rem] text-gray-50 flex flex-col items-start absolute bottom-20 left-10 sm:left-20'>
+        {/* <div className='w-[25rem] text-gray-50 flex flex-col items-start absolute bottom-20 left-10 sm:left-20'> */}
+        <div className='w-[25rem] text-gray-50 flex flex-col items-start relative bottom-[11.5rem] left-[2rem] sm:left-[4.5rem]'>
           <p className='font-trispace'>Hi, I am</p>
           <p className='text-7xl h-[4.5rem] font-bold authorNameList'>
             <span className='authorName'>Darren Chua</span>
