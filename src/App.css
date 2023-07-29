@@ -117,14 +117,14 @@ a {
 .tech-container {
   background: linear-gradient(145deg, var(--tw-bg-slate-100), var(--tw-bg-slate-200));
 }
-.education-container {
+.experience-container {
   background: linear-gradient(35deg, var(--tw-bg-slate-100), var(--tw-bg-slate-200));
 
   /* background-color: whitesmoke; */
   /* background: linear-gradient(145deg, var(--tw-bg-sky-700), var(--tw-bg-blue-950)); */
 }
 
-/* Education */
+/* Experience */
 /* Parallax */
 .parallaxAvensys {
     /* The image used */
@@ -203,7 +203,6 @@ a {
   transform-origin: top left
 }
 
- 
 /* Connect */
 /* Drawing animation */
 line {

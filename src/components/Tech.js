@@ -5,9 +5,9 @@ import { motion } from "framer-motion"
 import '../App.css';
 
 // Register item
-ChartJS.register(
-  ArcElement, Tooltip, Legend
-)
+// ChartJS.register(
+//   ArcElement, Tooltip, Legend
+// )
 
 export const skillsJson = [
   {
@@ -187,7 +187,7 @@ export const skillsJson = [
   }
 ]
 
-function Tech() {
+export default function Tech() {
     
   // ChartJS
   // const data = {
@@ -537,5 +537,3 @@ function Tech() {
     </div>
   )
 }
-
-export default Tech

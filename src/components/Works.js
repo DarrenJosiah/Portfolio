@@ -72,3 +72,24 @@ function Works() {
 }
 
 export default Works
+
+//   {/* Down Navigate Button */}
+{/* <motion.div
+className="absolute bottom-6 right-5 rounded-xl bg-gray-100 bg-opacity-60"
+whileHover={{ scale: 1.2 }}
+whileTap={{ scale: 0.9 }}
+transition={{ type: "spring", stiffness: 400, damping: 17 }}
+>
+<HashLink to='#tech' smooth>
+<a className='text-black hover:font-medium text-[2rem]'>
+  <FontAwesomeIcon icon={faSquareCaretDown} className='mx-2' />
+</a>
+</HashLink>
+</motion.div> */}
+
+// import { motion } from "framer-motion";
+// import { HashLink } from 'react-router-hash-link';
+
+// // FontAwesome
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons'
