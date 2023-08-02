@@ -7,7 +7,7 @@ function AboutMe() {
     // TODO Particles JS
 
     // Stacking Card
-    <div className='h-[100vh] top-0 sticky z-[-1]'>
+    <div className='h-[100vh]'>
       ABOUT ME
 
       {/* <Particle /> */}

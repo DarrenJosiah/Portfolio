@@ -5,27 +5,25 @@ import Home from './components/Home';
 import Experience from './components/Experience';
 import Education1 from './components/Education1';
 import Tech from './components/Tech';
-import Works from './components/Works';
+import Projects from './components/Projects';
 import Connect from './components/Connect';
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="App font-shareTech w-[100vw]">
+    <div className="App font-shareTech w-[100vw] overflow-x-hidden">
       <Navbar/>
       <Home />
       <Tech />
-          <Experience />
-      <AboutMe />
-
-
+      <Experience />
+      {/* <AboutMe /> maybe remove it */}
+      {/* <Projects /> */}
       <Connect />
       <Footer />
 
-      {/* <Education1 /> this has perspective */}
+    {/* <Education1 /> this has perspective */}
       {/* https://framerbook.com/animation/example-animations/26-tracking-the-cursor/ */}
-      {/* <Works /> */}
       {/* // TODO - ParticleJS */}
     </div>
 

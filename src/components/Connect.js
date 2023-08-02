@@ -51,7 +51,7 @@ function Connect() {
         variants={sentence}
         initial='hidden'
         whileInView='visible'
-        className='text-lg md:text-2xl  p-16 w-1/2 text-center'
+        className='text-lg md:text-2xl p-16 w-1/3 sm:w-1/2 text-center'
       >
         {'CONNECT WITH ME'.split('').map((char, index) => {
           return (

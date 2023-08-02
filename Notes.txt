@@ -22,6 +22,9 @@ npm i react-router-dom
 React Router Hash Link
 npm i react-router-hash-link
 
+React Tilt:
+npm i react-tilt
+
 FontAwesome:
 npm i --save @fortawesome/fontawesome-svg-core
 npm i --save @fortawesome/free-brands-svg-icons

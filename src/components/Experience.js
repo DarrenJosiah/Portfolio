@@ -19,7 +19,7 @@ import Particle from './Particles';
 
 export default function Experience() {
   return (
-    <div>
+    <div className='experience-container h-[100vh]'>
       {/* Fixed background */}
       <div className='experience-container font-spaceGrotesk absolute w-[100vw] h-[100vh]'/>
 
