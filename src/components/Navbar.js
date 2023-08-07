@@ -6,8 +6,8 @@ export default function Navbar() {
         <HashLink to='#tech' smooth>
           <a className='underlining mx-6 hover:font-medium'>TECH</a>
         </HashLink>
-        <HashLink to='#works' smooth>
-          <a className='underlining mx-6 hover:font-medium'>WORKS</a>
+        <HashLink to='#projects' smooth>
+          <a className='underlining mx-6 hover:font-medium'>PROJECTS</a>
         </HashLink>
     </div>
   )

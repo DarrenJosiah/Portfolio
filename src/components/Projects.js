@@ -4,8 +4,10 @@ import { Tilt } from 'react-tilt'
 function Projects() {
 
   return (
-    <div className='bg-pink-500 font-spaceGrotesk h-auto pb-32' id='works'>
-       <Tilt
+
+    // ame='tech-container font-spaceGrotesk pb-5' id='tech'>
+    <div className='bg-orange-600 text-white font-spaceGrotesk h-auto pb-32' id='projects'>
+       {/* <Tilt
           options={{
             max: 45,
             scale: 1,
@@ -14,7 +16,8 @@ function Projects() {
           className="bg-white bg-black p-5 rounded-2zl sm:w-[360px] w-full"
         >
           <div className='relatice w-full h-[230px]'>coming soon</div>
-        </Tilt>
+        </Tilt> */}
+        
       
       <p className='p-8'>PERSONAL PROJECTS</p>
         {/* Table */}
@@ -30,6 +33,8 @@ function Projects() {
         {/* Snapshot of Github commits? */}
         {/* Pie chart? */}
     </div>
+
+    // paste github contribution chart?
   )
 }
 

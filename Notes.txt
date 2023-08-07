@@ -25,6 +25,9 @@ npm i react-router-hash-link
 React Tilt:
 npm i react-tilt
 
+React Intersection Observer:
+npm install react-intersection-observer --save
+
 FontAwesome:
 npm i --save @fortawesome/fontawesome-svg-core
 npm i --save @fortawesome/free-brands-svg-icons
