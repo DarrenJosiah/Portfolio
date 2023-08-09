@@ -1,5 +1,5 @@
 import React from 'react'
-import Particle from './Particles'
+import Particle from './Particle'
 
 function AboutMe() {
   return (

@@ -203,6 +203,18 @@ a {
   transform-origin: top left
 }
 
+/* Projects */
+.blink {
+  animation: blinker .75s linear infinite;
+  /* color: red;
+  font-family: sans-serif; */
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
 /* Connect */
 /* Drawing animation */
 line {

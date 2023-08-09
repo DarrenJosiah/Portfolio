@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 // https://www.npmjs.com/package/react-tsparticles
 // https://www.youtube.com/watch?v=u8y2vCkZubk
 
-function Particle() {
+export default function Particle() {
   const particlesInit = useCallback(async (engine) => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -99,5 +99,3 @@ function Particle() {
     />
   );
 }
-
-export default Particle;

@@ -17,7 +17,7 @@ export default function App() {
 
   // React Intersection Observer for Experience section to achieve scroll snap 
   const { ref, inView, entry } = useInView({
-    threshold: 0.6, // Trigger when 60% of the section is in view
+    threshold: 0.4, // Trigger when 40% of the section is in view
   });
   useEffect(() => {
     if (inView && entry) {
@@ -41,7 +41,10 @@ export default function App() {
       <div ref={ref}>
         <Experience />
       </div>
-      {/* <Projects /> */}
+      <Projects />
+      {/* ProfilePicture
+      
+      with Jarallax */}
       <Connect />
       <Footer />
 
