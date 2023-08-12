@@ -3,6 +3,139 @@ import { Tilt } from 'react-tilt'
 import Particle from './Particle';
 import CustomTilt from './CustomTilt';
 
+export const projectsJson = [
+  {
+      "title": "BLUETICKS",
+      "description": 'Fullstack React + Django application using CRUD with validations utilising Firebase. Developed in 7 days for an interview.',
+      "tags": [
+        "React",
+        "Python",
+        "Django",
+        "Firebase"
+      ],
+      "estimatedCreationDate": "07/04/2023",
+      "estimatedCreationDuration": "7 days",
+      "link": "https://blueticks.onrender.com/"
+  },
+  {
+      "title": "JIMI-AI",
+      "description": "Coded along with JavaScript Mastery on YouTube. Generate AI image through MERN stack with OpenAI API.",
+      "tags": [
+        "MERN Stack",
+        "Tailwind",
+        "Vite",
+        "Cloudinary"
+      ],
+      "estimatedCreationDate": "12/05/2023",
+      "estimatedCreationDuration": "2 days",
+      "link": "https://jimi-ai-frontend.onrender.com/"
+  },
+  {
+      "title": "Inventory Sheep",
+      "description": "Inventory Management System project was created for personal use. Not completed yet.",
+      "tags": [
+        "Angular",
+        "Bootstrap",
+      ],
+      "estimatedCreationDate": "06/05/2023",
+      "estimatedCreationDuration": "12 hours",
+      "link": "https://inventory-sheep.vercel.app/"
+  },
+  {
+      "title": "3D Polar Bear",
+      "description": "React using Three.js, code guidance from Irradiance YouTube channel.",
+      "tags": [
+        "React",
+        "Three.js",
+      ],
+      "estimatedCreationDate": "28/04/2023",
+      "estimatedCreationDuration": "8 hours",
+      "link": "https://react3d-pzz8.onrender.com/"
+  },
+  {
+      "title": "KANBAN",
+      "description": "Drag and Drop functionality utilising CRUD with localStorage.",
+      "tags": [
+        "React",
+        "Tailwind",
+      ],
+      "estimatedCreationDate": "08/04/2023",
+      "estimatedCreationDuration": "3 weeks",
+      "link": "https://kanban-e5mn.onrender.com/"
+  },
+  {
+      "title": "Stocks Jaeger",
+      "description": "Picking up React + Tailwind, app to track Crypto, ETFs and Forex for personal use.",
+      "tags": [
+        "React",
+        "Tailwind",
+      ],
+      "estimatedCreationDate": "11/03/2023",
+      "estimatedCreationDuration": "3 weeks",
+      "link": "https://stocksjaeger.onrender.com/"
+  },
+  {
+      "title": "Zangyo Anime",
+      "description": "Anime library using AnimeAPI deployed to Firebase Hosting site instead of GitHub.",
+      "tags": [
+        "Angular",
+        "Bootstrap",
+        "Firebase",
+      ],
+      "estimatedCreationDate": "08/02/2023",
+      "estimatedCreationDuration": "3 weeks",
+      "link": "https://zangyoanime.web.app/"
+  },
+  {
+      "title": "DontPayAlsoCan",
+      "description": "Calculate 8% GST and 10% service charge for Singaporeans.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      "estimatedCreationDate": "04/01/2023",
+      "estimatedCreationDuration": "1 day",
+      "link": "https://darrenjosiah.github.io/DontPayAlsoCan/"
+  },
+  {
+      "title": "Minimalist Calculator",
+      "description": "Simple calculator inspired by YouTube",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      "estimatedCreationDate": "30/08/2022",
+      "estimatedCreationDuration": "2 days",
+      "link": "https://darrenjosiah.github.io/MinimalistCalculator/"
+  },
+  {
+      "title": "Genuine Convos",
+      "description": "Ice breaker game with a library of genuine questions.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      "estimatedCreationDate": "20/08/2022",
+      "estimatedCreationDuration": "3 days",
+      "link": "https://darrenjosiah.github.io/GenuineConvos/"
+  },
+  {
+    "title": "Weather App",
+    "description": "Code along with YouTube, search current Weather by city.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    "estimatedCreationDate": "13/03/2022????????",
+    "estimatedCreationDuration": "3 day",
+    "link": "https://weather-36016.web.app/"
+},
+
+]
 
 function Projects() {
 
@@ -11,35 +144,25 @@ function Projects() {
 
       <p className='p-8'> &lt;PERSONAL PROJECTS /&gt;<span className='blink'>|</span></p>
 
-      <div className='flex justify-evenly'>
-        <CustomTilt
-          projectTitle='BLUETICKS'
-          projectDescription='Fullstack React + Django application using CRUD with validations utilising Firebase.'
-          projectTags='[React, Django, Firebase]'
-        />
-
-        <Tilt
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450
-          }}
-          className="opacity-70 hover:opacity-100 cursor-crosshair bg-gray-500 text-white p-5 rounded-2xl sm:w-[360px] w-full shadow-xl shadow-black hover:text-green-400 hover:shadow-xl hover:shadow-green-400"
-        >
-          <div className='relative w-full mb-4 text-2xl'>
-            BLUETICKS
-          </div>
-          <p>Fullstack React + Django application using CRUD with validations utilising Firebase.</p>
-          <div class="pt-7">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span> 
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Django</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Firebase</span>
-          </div>
-          {/* <a href='http://blueticks.onrender.com/' target="_blank">blueticks.onrender.com/</a> */}
-        </Tilt>
+      <div className='flex flex-wrap justify-evenly'>
+        { projectsJson.map((project) => {
+          return (
+            <CustomTilt
+              projectTitle={project.title}
+              projectDescription={project.description}
+              projectTags={project.tags}
+            />
+          )
+        }) }
       </div>
 
-      <Particle></Particle>
+      {/* 
+        Duration? Est of completion
+        Chart?
+      */}
+
+
+      {/* <Particle></Particle> */}
 
 
         {/* Table */}
