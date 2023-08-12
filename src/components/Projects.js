@@ -87,6 +87,18 @@ export const projectsJson = [
       "link": "https://zangyoanime.web.app/"
   },
   {
+    "title": "Weather App",
+    "description": "Code along with YouTube, search current Weather by city.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    "estimatedCreationDate": "01/02/2022????????",
+    "estimatedCreationDuration": "3 day",
+    "link": "https://weather-36016.web.app/"
+},
+  {
       "title": "DontPayAlsoCan",
       "description": "Calculate 8% GST and 10% service charge for Singaporeans.",
       "tags": [
@@ -97,6 +109,18 @@ export const projectsJson = [
       "estimatedCreationDate": "04/01/2023",
       "estimatedCreationDuration": "1 day",
       "link": "https://darrenjosiah.github.io/DontPayAlsoCan/"
+  },
+  {
+      "title": "Darren's Portfolio Website 2022",
+      "description": "Celebrating 3 months of Frontend Development.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      "estimatedCreationDate": "03/11/2022",
+      "estimatedCreationDuration": "3 weeks",
+      "link": "https://darrenjosiah2022.onrender.com/"
   },
   {
       "title": "Minimalist Calculator",
@@ -121,20 +145,7 @@ export const projectsJson = [
       "estimatedCreationDate": "20/08/2022",
       "estimatedCreationDuration": "3 days",
       "link": "https://darrenjosiah.github.io/GenuineConvos/"
-  },
-  {
-    "title": "Weather App",
-    "description": "Code along with YouTube, search current Weather by city.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    "estimatedCreationDate": "13/03/2022????????",
-    "estimatedCreationDuration": "3 day",
-    "link": "https://weather-36016.web.app/"
-},
-
+  }
 ]
 
 function Projects() {
@@ -143,7 +154,8 @@ function Projects() {
     <div className='font-trispace from-gray-700 to-gray-900 bg-gradient-to-r text-green-400 h-auto pb-32' id='projects'>
 
       <p className='p-8'> &lt;PERSONAL PROJECTS /&gt;<span className='blink'>|</span></p>
-
+      
+      {/* Cards */}
       <div className='flex flex-wrap justify-evenly'>
         { projectsJson.map((project) => {
           return (
@@ -155,6 +167,10 @@ function Projects() {
           )
         }) }
       </div>
+
+      {/* Preview */}
+      <img src='/MyImages/Preview/KANBAN.png' alt='KANBAN' className='h-[9vh]'/>
+
 
       {/* 
         Duration? Est of completion

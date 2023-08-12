@@ -8,13 +8,13 @@ export default function CustomTilt({projectTitle, projectDescription, projectTag
             scale: 1,
             speed: 450
         }}
-        className="opacity-70 hover:opacity-100 cursor-crosshair bg-gray-500 text-white p-5 rounded-2xl sm:w-[360px] w-full shadow-xl shadow-black hover:text-green-400 hover:shadow-xl hover:shadow-green-400"
+        className="mb-8 opacity-70 hover:opacity-100 cursor-crosshair bg-gray-500 text-white p-5 rounded-2xl max-w-xs w-full shadow-xl shadow-black hover:text-green-400 hover:shadow-xl hover:shadow-green-400"
         >
         {/* Title */}
         <div className='relative w-full mb-4 text-2xl font-semibold'>{projectTitle}</div>
         
         {/* Description */}
-        <p>{projectDescription}</p>
+        <p className='text-sm'>{projectDescription}</p>
         
         {/* Tags */}
         <div class="pt-7">
