@@ -3,6 +3,8 @@ import { Tilt } from 'react-tilt'
 import Particle from './Particle';
 import CustomTilt from './CustomTilt';
 
+import kanbanAppIcon from './MyImages/AppIcon/kanban.ico';
+
 export const projectsJson = [
   {
       "title": "BLUETICKS",
@@ -15,7 +17,7 @@ export const projectsJson = [
       ],
       "estimatedCreationDate": "07/04/2023",
       "estimatedCreationDuration": "7 days",
-      "link": "https://blueticks.onrender.com/"
+      "link": "https://blueticks.onrender.com/",
   },
   {
       "title": "JIMI-AI",
@@ -28,7 +30,7 @@ export const projectsJson = [
       ],
       "estimatedCreationDate": "12/05/2023",
       "estimatedCreationDuration": "2 days",
-      "link": "https://jimi-ai-frontend.onrender.com/"
+      "link": "https://jimi-ai-frontend.onrender.com/",
   },
   {
       "title": "Inventory Sheep",
@@ -39,7 +41,7 @@ export const projectsJson = [
       ],
       "estimatedCreationDate": "06/05/2023",
       "estimatedCreationDuration": "12 hours",
-      "link": "https://inventory-sheep.vercel.app/"
+      "link": "https://inventory-sheep.vercel.app/",
   },
   {
       "title": "3D Polar Bear",
@@ -61,7 +63,8 @@ export const projectsJson = [
       ],
       "estimatedCreationDate": "08/04/2023",
       "estimatedCreationDuration": "3 weeks",
-      "link": "https://kanban-e5mn.onrender.com/"
+      "link": "https://kanban-e5mn.onrender.com/",
+      "appIcon" : kanbanAppIcon
   },
   {
       "title": "Stocks Jaeger",
@@ -148,7 +151,7 @@ export const projectsJson = [
   }
 ]
 
-function Projects() {
+export default function Projects() {
 
   return (
     <div className='font-trispace from-gray-700 to-gray-900 bg-gradient-to-r text-green-400 h-auto pb-32' id='projects'>
@@ -156,21 +159,18 @@ function Projects() {
       <p className='p-8'> &lt;PERSONAL PROJECTS /&gt;<span className='blink'>|</span></p>
       
       {/* Cards */}
-      <div className='flex flex-wrap justify-evenly'>
+      <div className='flex flex-wrap justify-evenly items-start mx-8 sm:mx-0'>
         { projectsJson.map((project) => {
           return (
             <CustomTilt
               projectTitle={project.title}
               projectDescription={project.description}
               projectTags={project.tags}
+              projectAppIcon={project.appIcon}
             />
           )
         }) }
       </div>
-
-      {/* Preview */}
-      <img src='/MyImages/Preview/KANBAN.png' alt='KANBAN' className='h-[9vh]'/>
-
 
       {/* 
         Duration? Est of completion
@@ -198,8 +198,6 @@ function Projects() {
     // paste github contribution chart?
   )
 }
-
-export default Projects
 
 //   {/* Down Navigate Button */}
 {/* <motion.div

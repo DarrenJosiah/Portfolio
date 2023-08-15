@@ -257,10 +257,10 @@ export default function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100">
+              <div className="text-left mb-1 text-base text-sm sm:font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'
@@ -323,10 +323,10 @@ export default function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100">
+              <div className="text-left mb-1 text-base text-sm sm:font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'
@@ -389,10 +389,10 @@ export default function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100">
+              <div className="text-left mb-1 text-base text-sm sm:font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'
@@ -456,10 +456,10 @@ export default function Tech() {
             <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
-            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[25vw] sm:w-[20vw]'>
+            <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
               
               {/* Name */}  
-              <div className="text-left mb-1 text-base font-medium text-gray-100">
+              <div className="text-left mb-1 text-base text-sm sm:font-medium text-gray-100">
                 <motion.div
                   variants={sentence}
                   initial='hidden'

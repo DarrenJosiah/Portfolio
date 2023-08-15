@@ -7,7 +7,6 @@ import avensys from './MyImages/avensys.svg'
 import certificate from './MyImages/certificate.png'
 import rmit from './MyImages/rmit.png'
 import sp from './MyImages/sp.png'
-import polar from './MyImages/polar.jpg'
 
 import styles from '.././App.css';
 import Particle from './Particle';
