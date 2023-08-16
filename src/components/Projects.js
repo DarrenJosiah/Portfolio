@@ -1,9 +1,6 @@
-import React from 'react'
-import { Tilt } from 'react-tilt'
-import Particle from './Particle';
 import CustomTilt from './CustomTilt';
 
-import kanbanAppIcon from './MyImages/AppIcon/kanban.ico';
+// import kanbanAppIcon from './MyImages/Icon/kanban.ico';
 
 export const projectsJson = [
   {
@@ -64,7 +61,6 @@ export const projectsJson = [
       "estimatedCreationDate": "08/04/2023",
       "estimatedCreationDuration": "3 weeks",
       "link": "https://kanban-e5mn.onrender.com/",
-      "appIcon" : kanbanAppIcon
   },
   {
       "title": "Stocks Jaeger",
@@ -170,7 +166,7 @@ export default function Projects() {
               projectTitle={project.title}
               projectDescription={project.description}
               projectTags={project.tags}
-              projectAppIcon={project.appIcon}
+              // projectAppIcon={project.appIcon}
             />
           )
         }) }

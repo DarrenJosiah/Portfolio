@@ -1,6 +1,5 @@
 import { Tilt } from 'react-tilt'
 
-
 export default function CustomTilt({projectTitle, projectDescription, projectTags, projectAppIcon}) {
   return (
     <Tilt

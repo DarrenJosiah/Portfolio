@@ -1,21 +1,4 @@
-import React from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
-
-import ey from './MyImages/ey.png'
-import avensys from './MyImages/avensys.svg'
-import certificate from './MyImages/certificate.png'
-import rmit from './MyImages/rmit.png'
-import sp from './MyImages/sp.png'
-
-import styles from '.././App.css';
-import Particle from './Particle';
-
-// TODO - E&Y Frontend Developer
-
-   {/* CONFETTI  */}
-      {/* Middle of screen has a gif? */}
-      {/* Frame motion has a joystick? */}
 
 export default function Experience() {
   return (
@@ -54,7 +37,7 @@ export default function Experience() {
 
           {/* Page 1 - Sticky - Ernst & Young Image */}
           <ParallaxLayer sticky={{ start: 1.4, end: 1.7 }} className='flex items-center justify-end'>
-              <img src={ey} className='h-fill w-[15%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/ey.png' className='h-fill w-[15%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
           
           {/* Page 2 - Sticky - Avensys Consulting Description */}
@@ -69,7 +52,7 @@ export default function Experience() {
 
           {/* Page 2 - Sticky - Avensys Consulting Image */}
           <ParallaxLayer sticky={{ start: 2.4, end: 2.7 }} className='flex items-center justify-end'>
-              <img src={avensys} className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/avensys.svg' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
   
 
@@ -103,7 +86,7 @@ export default function Experience() {
 
           {/* Page 5 - Sticky - JFS Image */}
           <ParallaxLayer sticky={{ start: 5.4, end: 5.7 }} className='flex items-center justify-end'>
-              <img src={certificate} className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='certificate.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
 
 
@@ -136,7 +119,7 @@ export default function Experience() {
 
           {/* Page 9 - Sticky - RMIT Image */}
           <ParallaxLayer sticky={{ start: 8.4, end: 8.7 }} className='flex items-center justify-end'>
-              <img src={rmit} className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/rmit.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
           
           {/* Page 10 - Sticky - SP Description */}
@@ -152,7 +135,7 @@ export default function Experience() {
 
           {/* Page 10 - Sticky - SP Image */}
           <ParallaxLayer sticky={{ start: 9.4, end: 9.7 }} className='flex items-center justify-end'>
-              <img src={sp} className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/sp.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
       </Parallax>
     </div>

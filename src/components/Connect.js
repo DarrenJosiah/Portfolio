@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion"
 
 // FontAwesome
@@ -6,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-function Connect() {
+export default function Connect() {
   // Drawing animation
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -154,5 +153,3 @@ function Connect() {
     </div>
   )
 }
-
-export default Connect

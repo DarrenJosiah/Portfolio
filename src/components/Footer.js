@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Footer() {
+export default function Footer() {
   return (
     <div class="marquee font-spaceGrotesk text-white bg-black">
       <div class="marquee__inner">
@@ -14,5 +12,3 @@ function Footer() {
     </div>
   )
 }
-
-export default Footer

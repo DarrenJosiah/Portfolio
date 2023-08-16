@@ -1,13 +1,5 @@
-import React from 'react'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
-import { Doughnut } from 'react-chartjs-2';
 import { motion } from "framer-motion"
 import '../App.css';
-
-// Register item
-// ChartJS.register(
-//   ArcElement, Tooltip, Legend
-// )
 
 export const skillsJson = [
   {
@@ -189,16 +181,6 @@ export const skillsJson = [
 
 export default function Tech() {
     
-  // ChartJS
-  // const data = {
-  //   labels: ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'JavaScript'],
-  //   datasets: [{
-  //     data: [95,5],
-  //     backgroundColor: ['#EA580C', '#F8FAFC'],
-  //     borderColor: ['#EA580C', 'black'],
-  //   }]
-  // }
-
   // Text animation
   const sentence = {
     hidden: { opacity: 1 },
@@ -482,58 +464,6 @@ export default function Tech() {
         )
       }) }
       </div>
- 
-      
-      {/* <div className='flex flex-row justify-center items-center'> */}
-        {/* <div className=''>
-          <Doughnut data={data}></Doughnut>
-        </div> */}
-
-          {/* Card */}
-          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100-700">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900>FRONT-END</h5>
-              <div className='font-normal text-gray-700'>
-
-             
-                  
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Bootstrap</p>
-                <p>Tailwind</p>
-                <p>JavaScript</p>
-                <p>TypeScript</p>
-                <p>Angular</p>
-                <p>React</p>
-              </div>
-          </a> */}
-          {/* Card */}
-          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100-700">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900>BACK-END</h5>
-              <div className='font-normal text-gray-700'>
-                <p>Java</p>
-                <p>Spring Boot</p>
-                <p>Python</p>
-                <p>C++</p>
-                <p>C</p>
-              </div>
-          </a> */}
-          {/* Card */}
-          {/* <a className="mb-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100-700">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900>DATABASE</h5>
-              <div className='font-normal text-gray-700'>
-                <p>MySQL</p>
-                <p>Oracle SQL Developer</p>
-              </div>
-          </a> */}
-        <div>
-          
-        </div>
-      
-        
-        {/* https://www.chartjs.org/docs/latest/getting-started/ */}
-        {/* Parallax scrolling */}
-        {/* https://www.youtube.com/watch?v=UgIwjLg4ONk */}
-      {/* </div> */}
     </div>
   )
 }

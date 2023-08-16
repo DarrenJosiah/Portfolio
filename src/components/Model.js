@@ -47,7 +47,7 @@ function ElementShow() {
     )
 }
 
-function Model() {
+export default function Model() {
   return (
     // Suspense - a feature in the React library for handling asynchronous rendering
     <Suspense fallback={null}> 
@@ -58,5 +58,3 @@ function Model() {
     </Suspense>
   )
 }
-
-export default Model
