@@ -1,183 +1,6 @@
 import { motion } from "framer-motion"
 import '../App.css';
-
-export const skillsJson = [
-  {
-      "name": "HTML",
-      "confidence": 90,
-      "confidenceTailwindCSS": "w-[90%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/html.png"
-  },
-  {
-      "name": "CSS",
-      "confidence": 90,
-      "confidenceTailwindCSS": "w-[90%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/css.png"
-  },
-  {
-      "name": "Bootstrap",
-      "confidence": 80,
-      "confidenceTailwindCSS": "w-[80%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/bootstrap.png"
-  },
-  {
-      "name": "Tailwind",
-      "confidence": 80,
-      "confidenceTailwindCSS": "w-[80%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/tailwind.png"
-  },
-  {
-      "name": "JavaScript",
-      "confidence": 70,
-      "confidenceTailwindCSS": "w-[70%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/javascript.png"
-  },
-  {
-      "name": "TypeScript",
-      "confidence": 70,
-      "confidenceTailwindCSS": "w-[70%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/typescript.png"
-  },
-  {
-      "name": "Angular",
-      "confidence": 70,
-      "confidenceTailwindCSS": "w-[70%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/angular.png"
-  },
-  {
-      "name": "React",
-      "confidence": 40,
-      "confidenceTailwindCSS": "w-[40%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/react.png"
-  },
-  {
-      "name": "Django",
-      "confidence": 10,
-      "confidenceTailwindCSS": "w-[10%]",
-      "type": "Frontend",
-      "iconPath": "/MyImages/Tech/django.png"
-    },
-    {
-      "name": "Java",
-      "confidence": 80,
-      "confidenceTailwindCSS": "w-[80%]",
-      "type": "Backend",
-      "iconPath": "/MyImages/Tech/java.png"
-  },
-  {
-      "name": "Spring Boot",
-      "confidence": 20,
-      "confidenceTailwindCSS": "w-[20%]",
-      "type": "Backend",
-      "iconPath": "/MyImages/Tech/springboot.png"
-  },
-  {
-      "name": "Python",
-      "confidence": 20,
-      "confidenceTailwindCSS": "w-[20%]",
-      "type": "Backend",
-      "iconPath": "/MyImages/Tech/python.png"
-  },
-  {
-      "name": "C++",
-      "confidence": 20,
-      "confidenceTailwindCSS": "w-[20%]",
-      "type": "Backend",
-      "iconPath": "/MyImages/Tech/c++.png"
-  },
-  {
-      "name": "C",
-      "confidence": 20,
-      "confidenceTailwindCSS": "w-[20%]",
-      "type": "Backend",
-      "iconPath": "/MyImages/Tech/c.png"
-  },
-  {
-      "name": "VBA",
-      "confidence": 10,
-      "confidenceTailwindCSS": "w-[10%]",
-      "type": "Backend",
-      "iconPath": "/MyImages/Tech/vba.png"
-  },
-  {
-      "name": "MySQL",
-      "confidence": 70,
-      "confidenceTailwindCSS": "w-70%]",
-      "type": "Database",
-      "iconPath": "/MyImages/Tech/mysql.png"
-  },
-  {
-      "name": "Oracle SQL",
-      "confidence": 20,
-      "confidenceTailwindCSS": "w-[20%]",
-      "type": "Database",
-      "iconPath": "/MyImages/Tech/oraclesql.png"
-  },
-  {
-      "name": "Visual Studio Code",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/vscode.png"
-  }, 
-  {
-      "name": "IntelliJ IDEA",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/intellijidea.png"
-  }, 
-  {
-      "name": "Eclipse",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/eclipse.png"
-  }, 
-  {
-      "name": "Git",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/git.png"
-  }, 
-  {
-      "name": "Postman",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/postman.png"
-  }, 
-  {
-      "name": "Swagger UI",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/swaggerui.png"
-  }, 
-  {
-      "name": "Chrome DevTools",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/chromedevtools.png"
-  }, 
-  {
-      "name": "WinSCP",
-      "confidence": null,
-      "confidenceTailwindCSS": null,
-      "type": "Tools",
-      "iconPath": "/MyImages/Tech/winscp.png"
-  }
-]
+import skills from '../data/skills.json';
 
 export default function Tech() {
     
@@ -223,7 +46,7 @@ export default function Tech() {
       </motion.div>
       {/* FRONT-END - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      { skillsJson.map((item, index) => {
+      { skills.map((item, index) => {
         return ( item.type === 'Frontend' &&
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -289,7 +112,7 @@ export default function Tech() {
       </motion.div>
       {/* BACK-END - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      { skillsJson.map((item, index) => {
+      { skills.map((item, index) => {
         return ( item.type === 'Backend' &&
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -355,7 +178,7 @@ export default function Tech() {
       </motion.div>
       {/* DATABASE - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      { skillsJson.map((item, index) => {
+      { skills.map((item, index) => {
         return ( item.type === 'Database' &&
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -422,7 +245,7 @@ export default function Tech() {
       </motion.div>
       {/* TOOLS - Cards */}
       <div className='flex flex-row flex-wrap justify-center mb-28'>
-      { skillsJson.map((item, index) => {
+      { skills.map((item, index) => {
         return ( item.type === 'Tools' &&
           <motion.div
             initial={{ opacity: 0, x: 50 }}

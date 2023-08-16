@@ -56,6 +56,5 @@ export default function App() {
 // Clean up JSON
 
 // Last steps:
-// Take out json files
 // Clean up
 // Hide navigation paths
