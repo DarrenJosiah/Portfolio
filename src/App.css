@@ -114,7 +114,9 @@ a {
   }
 }
 
-.tech-container {
+.tech-container,
+.about-me-container,
+.connect-container {
   background: linear-gradient(145deg, var(--tw-bg-slate-100), var(--tw-bg-slate-200));
 }
 .experience-container {

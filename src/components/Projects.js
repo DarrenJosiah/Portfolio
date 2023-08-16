@@ -90,18 +90,6 @@ export const projectsJson = [
       "link": "https://zangyoanime.web.app/"
   },
   {
-    "title": "Weather App",
-    "description": "Code along with YouTube, search current Weather by city.",
-    "tags": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    "estimatedCreationDate": "01/02/2022????????",
-    "estimatedCreationDuration": "3 day",
-    "link": "https://weather-36016.web.app/"
-},
-  {
       "title": "DontPayAlsoCan",
       "description": "Calculate 8% GST and 10% service charge for Singaporeans.",
       "tags": [
@@ -112,6 +100,18 @@ export const projectsJson = [
       "estimatedCreationDate": "04/01/2023",
       "estimatedCreationDuration": "1 day",
       "link": "https://darrenjosiah.github.io/DontPayAlsoCan/"
+  },
+  {
+    "title": "Weather App",
+    "description": "Code along with YouTube, search current Weather by city.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    "estimatedCreationDate": "29/12/2022",
+    "estimatedCreationDuration": "3 day",
+    "link": "https://weather-36016.web.app/"
   },
   {
       "title": "Darren's Portfolio Website 2022",
@@ -152,6 +152,10 @@ export const projectsJson = [
 ]
 
 export default function Projects() {
+
+  // TODO 
+  // SPLINE
+  // https://viewer.spline.design/
 
   return (
     <div className='font-trispace from-gray-700 to-gray-900 bg-gradient-to-r text-green-400 h-auto pb-32' id='projects'>

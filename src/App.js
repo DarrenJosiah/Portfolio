@@ -37,7 +37,6 @@ export default function App() {
       <Navbar/>
       <Home />
       <Tech />
-      {/* <AboutMe /> maybe remove it */}
       <div ref={ref}>
         <Experience />
       </div>
@@ -45,6 +44,7 @@ export default function App() {
       {/* ProfilePicture
       
       with Jarallax */}
+      <AboutMe />
       <Connect />
       <Footer />
 
@@ -74,3 +74,15 @@ export default function App() {
     // </div>
   );
 }
+
+// TODO
+// fonts too big, especially Home and Tech. Can standardise from Connect
+// projects navbar navigation doesn’t work
+// on mobile, threshold might be better at 50%
+// - add app icon for projects
+// https://jarallax.nkdev.info/
+
+// Last steps:
+// Take out json files
+// Clean up
+// Hide navigation paths

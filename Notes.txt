@@ -15,6 +15,8 @@ npm install framer-motion
 
 React Spring Parallax
 npm i @react-spring/parallax
+
+React Scroll Parallax
 npm i react-scroll-parallax
 
 React Router DOM v6.14
