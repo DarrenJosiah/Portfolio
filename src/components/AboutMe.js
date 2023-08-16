@@ -9,7 +9,7 @@ export default function AboutMe() {
 
       <ParallaxProvider>
         <ParallaxBanner
-          layers={[{ image: '/MyImages/portrait.jpeg', speed: -15 }]}
+          layers={[{ image: '/MyImages/AboutMe/portrait.jpeg', speed: -15 }]}
           className="aspect-[2/1]"
         />
       </ParallaxProvider>

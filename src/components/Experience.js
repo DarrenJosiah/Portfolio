@@ -86,7 +86,7 @@ export default function Experience() {
 
           {/* Page 5 - Sticky - JFS Image */}
           <ParallaxLayer sticky={{ start: 5.4, end: 5.7 }} className='flex items-center justify-end'>
-              <img src='certificate.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/certificate.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
 
 
