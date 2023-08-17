@@ -42,6 +42,10 @@ npm i react-particles
 npm i react-tsparticles // Typescript versiona
 npm i tsparticles
 
+Spline
+npm i @splinetool/react-spline
+npm install @splinetool/runtime
+
 Inspirations:
 https://transforms.framer.wiki/
 https://www.vouscon.com/

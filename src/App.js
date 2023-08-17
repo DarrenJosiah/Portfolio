@@ -58,3 +58,4 @@ export default function App() {
 // Last steps:
 // Clean up
 // Hide navigation paths
+// Errors from terminal
