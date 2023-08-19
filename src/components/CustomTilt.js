@@ -1,6 +1,6 @@
 import { Tilt } from 'react-tilt'
 
-export default function CustomTilt({projectTitle, projectDescription, projectTags, projectAppIcon}) {
+export default function CustomTilt({projectTitle, projectDescription, projectTags, projectIcon, projectPreview1, projectPreview2}) {
   return (
     <Tilt
         options={{
@@ -17,13 +17,17 @@ export default function CustomTilt({projectTitle, projectDescription, projectTag
         {/* Heading */}
         <div className='mb-4 flex justify-center items-center'>
           {/* Icon */}
-          <img src={projectAppIcon} alt={projectTitle} className='h-[6vh] rounded-2xl'/>
+          <img src={projectIcon} alt={projectIcon} className='h-[6vh] rounded-2xl'/>
           {/* Title */}
           <p className='ms-2 text-2xl font-semibold'>{projectTitle}</p>
         </div>
         
         {/* Description */}
         <p className='text-xs'>{projectDescription}</p>
+
+      {/* TODO */}
+        {/* Preview */}
+        <img src={projectPreview1} alt={projectPreview1} className='h-[6vh] rounded-2xl'/>
         
         {/* Tags */}
         <div class="pt-7">

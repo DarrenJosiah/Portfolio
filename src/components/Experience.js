@@ -18,10 +18,10 @@ export default function Experience() {
             </div>
           </ParallaxLayer>
 
-          {/* Page 0 - Spaceship */}
+          {/* Page 0 - Rocket */}
           <ParallaxLayer offset={0} speed={0.5} className='flex items-center justify-center ms-24'>
             {/* <p className='text-7xl -rotate-45'>🚀</p> */}
-            <Spline scene="https://prod.spline.design/xoUr7qoY48j3Nnag/scene.splinecode" />
+            <Spline className='ms-24' scene="https://prod.spline.design/xoUr7qoY48j3Nnag/scene.splinecode" />
           </ParallaxLayer>
   
           {/* Page 1 - Sticky - Ernst & Young Description */}
@@ -35,7 +35,7 @@ export default function Experience() {
 
           {/* Page 1 - Sticky - Ernst & Young Image */}
           <ParallaxLayer sticky={{ start: 1.4, end: 1.7 }} className='flex items-center justify-end'>
-              <img src='/MyImages/Experience/ey.png' className='h-fill w-[15%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/ey.png' className='h-fill w-[15%] mr-12 sm:mr-12 md:mr-12 lg:mr-32'></img>
           </ParallaxLayer>
           
           {/* Page 2 - Sticky - Avensys Consulting Description */}
@@ -62,7 +62,8 @@ export default function Experience() {
 
           {/* Page 3 - Studying */}
           <ParallaxLayer offset={4.2} speed={0.5} className='flex items-center justify-center ms-28'>
-            <p className='text-7xl rotate-90'>👨🏻‍💻</p>
+            {/* <p className='text-7xl rotate-90'>👨🏻‍💻</p> */}
+            <Spline className='ms-24' scene="https://prod.spline.design/66FwbbgkPvgY2i8L/scene.splinecode" />
           </ParallaxLayer>
   
           {/* Page 5 - Sticky - JFS Description */}
@@ -89,7 +90,8 @@ export default function Experience() {
 
           {/* Page 7 - Graduation Hat */}
           <ParallaxLayer offset={7.2} speed={0.5} className='flex items-center justify-center ms-28'>
-            <p className='text-7xl rotate-45'>🎓</p>
+            {/* <p className='text-7xl rotate-45'>🎓</p> */}
+            <Spline className='ms-24' scene="https://prod.spline.design/dfhiLeKnWu3Dy1rn/scene.splinecode" />
           </ParallaxLayer>
   
           {/* Page 9 - Sticky - RMIT Description */}

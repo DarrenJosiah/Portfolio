@@ -1,11 +1,7 @@
 import CustomTilt from './CustomTilt';
 import projects from '../data/projects.json';
 
-// import kanbanAppIcon from './MyImages/Icon/kanban.ico';
-
-// TODO 
-// SPLINE
-// https://viewer.spline.design/
+// import kanbanAppIcon from '/MyImages/Projects/Icon/kanban.ico';
 
 export default function Projects() {
   return (
@@ -21,7 +17,8 @@ export default function Projects() {
               projectTitle={project.title}
               projectDescription={project.description}
               projectTags={project.tags}
-              // projectAppIcon={project.appIcon}
+              projectIcon={project.icon}
+              projectPreview1={project.preview1}
             />
           )
         }) }
