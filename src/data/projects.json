@@ -11,8 +11,8 @@
         "estimatedCreationDate": "07/04/2023",
         "estimatedCreationDuration": "7 days",
         "link": "https://blueticks.onrender.com/",
-        "preview1": "/MyImages/Projects/Preview/blueticks1.png",
-        "preview2": "/MyImages/Projects/Preview/blueticks2.png"
+        "icon": "/MyImages/Projects/Icon/blueticks.jpeg",
+        "preview": "/MyImages/Projects/Preview/blueticks.png"
     },
     {
         "title": "JIMI-AI",
@@ -26,7 +26,8 @@
         "estimatedCreationDate": "12/05/2023",
         "estimatedCreationDuration": "2 days",
         "link": "https://jimi-ai-frontend.onrender.com/",
-        "icon": "/MyImages/Projects/Icon/jimi.jpeg"
+        "icon": "/MyImages/Projects/Icon/jimi.jpeg",
+        "preview": "/MyImages/Projects/Preview/jimi.png"
     },
     {
         "title": "Inventory Sheep",
@@ -38,7 +39,8 @@
         "estimatedCreationDate": "06/05/2023",
         "estimatedCreationDuration": "12 hours",
         "link": "https://inventory-sheep.vercel.app/",
-        "icon": "/MyImages/Projects/Icon/inventorysheep.png"
+        "icon": "/MyImages/Projects/Icon/inventorysheep.png",
+        "preview": "/MyImages/Projects/Preview/inventorysheep.png"
     },
     {
         "title": "3D Polar Bear",
@@ -50,7 +52,8 @@
         "estimatedCreationDate": "28/04/2023",
         "estimatedCreationDuration": "8 hours",
         "link": "https://react3d-pzz8.onrender.com/",
-        "icon": "/MyImages/Projects/Icon/3dpolarbear.ico"
+        "icon": "/MyImages/Projects/Icon/3dpolarbear.ico",
+        "preview": "/MyImages/Projects/Preview/3dpolarbear.png"
     },
     {
         "title": "KANBAN",
@@ -62,7 +65,8 @@
         "estimatedCreationDate": "08/04/2023",
         "estimatedCreationDuration": "3 weeks",
         "link": "https://kanban-e5mn.onrender.com/",
-        "icon": "/MyImages/Projects/Icon/kanban.ico"
+        "icon": "/MyImages/Projects/Icon/kanban.ico",
+        "preview": "/MyImages/Projects/Preview/kanban.png"
     },
     {
         "title": "Stocks Jaeger",
@@ -74,7 +78,8 @@
         "estimatedCreationDate": "11/03/2023",
         "estimatedCreationDuration": "3 weeks",
         "link": "https://stocksjaeger.onrender.com/",
-        "icon": "/MyImages/Projects/Icon/stocksjaeger.png"
+        "icon": "/MyImages/Projects/Icon/stocksjaeger.png",
+        "preview": "/MyImages/Projects/Preview/stocksjaeger.png"
     },
     {
         "title": "Zangyo Anime",
@@ -86,7 +91,9 @@
         ],
         "estimatedCreationDate": "08/02/2023",
         "estimatedCreationDuration": "3 weeks",
-        "link": "https://zangyoanime.web.app/"
+        "link": "https://zangyoanime.web.app/",
+        "icon": "/MyImages/Projects/Icon/zangyoanime.jpeg",
+        "preview": "/MyImages/Projects/Preview/zangyoanime.png"
     },
     {
         "title": "DontPayAlsoCan",
@@ -99,7 +106,8 @@
         "estimatedCreationDate": "04/01/2023",
         "estimatedCreationDuration": "1 day",
         "link": "https://darrenjosiah.github.io/DontPayAlsoCan/",
-        "icon": "/MyImages/Projects/Icon/dontpayalsocan.png"
+        "icon": "/MyImages/Projects/Icon/dontpayalsocan.png",
+        "preview": "/MyImages/Projects/Preview/dontpayalsocan.png"
     },
     {
       "title": "Weather App",
@@ -111,7 +119,9 @@
       ],
       "estimatedCreationDate": "29/12/2022",
       "estimatedCreationDuration": "3 day",
-      "link": "https://weather-36016.web.app/"
+      "link": "https://weather-36016.web.app/",
+      "icon": "/MyImages/Projects/Icon/weatherapp.png",
+      "preview": "/MyImages/Projects/Preview/weatherapp.png"
     },
     {
         "title": "Darren's Portfolio Website 2022",
@@ -124,7 +134,8 @@
         "estimatedCreationDate": "03/11/2022",
         "estimatedCreationDuration": "3 weeks",
         "link": "https://darrenjosiah2022.onrender.com/",
-        "icon": "/MyImages/Projects/Icon/darrensportfoliowebsite2022.png"
+        "icon": "/MyImages/Projects/Icon/darrensportfoliowebsite2022.png",
+        "preview": "/MyImages/Projects/Preview/darrensportfoliowebsite2022.png"
     },
     {
         "title": "Minimalist Calculator",
@@ -136,7 +147,9 @@
         ],
         "estimatedCreationDate": "30/08/2022",
         "estimatedCreationDuration": "2 days",
-        "link": "https://darrenjosiah.github.io/MinimalistCalculator/"
+        "link": "https://darrenjosiah.github.io/MinimalistCalculator/",
+        "icon": "/MyImages/Projects/Icon/minimalistcalculator.png",
+        "preview": "/MyImages/Projects/Preview/minimalistcalculator.png"
     },
     {
         "title": "Genuine Convos",
@@ -148,6 +161,8 @@
         ],
         "estimatedCreationDate": "20/08/2022",
         "estimatedCreationDuration": "3 days",
-        "link": "https://darrenjosiah.github.io/GenuineConvos/"
+        "link": "https://darrenjosiah.github.io/GenuineConvos/",
+        "icon": "/MyImages/Projects/Icon/genuineconvos.jpeg",
+        "preview": "/MyImages/Projects/Preview/genuineconvos.png"
     }
   ]

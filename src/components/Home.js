@@ -2,7 +2,7 @@ import Model from './Model'
 
 export default function Home() {
   return (
-    <div className='mx-3 bg-orange-600 h-[90vh]'>
+    <div className='mx-3 bg-orange-600 h-[90vh]' id='home'>
         {/* 3D Model */}
         <Model />
 

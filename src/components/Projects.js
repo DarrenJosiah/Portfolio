@@ -16,9 +16,10 @@ export default function Projects() {
             <CustomTilt
               projectTitle={project.title}
               projectDescription={project.description}
+              projectLink={project.link}
               projectTags={project.tags}
               projectIcon={project.icon}
-              projectPreview1={project.preview1}
+              projectPreview={project.preview}
             />
           )
         }) }

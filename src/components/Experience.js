@@ -4,7 +4,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function Experience() {
   return (
-    <div className='experience-container h-[100vh]'>
+    <div className='experience-container h-[100vh]' id='experience'>
       {/* Fixed background */}
       <div className='experience-container font-spaceGrotesk absolute w-[100vw] h-[100vh]'/>
 
@@ -21,7 +21,7 @@ export default function Experience() {
           {/* Page 0 - Rocket */}
           <ParallaxLayer offset={0} speed={0.5} className='flex items-center justify-center ms-24'>
             {/* <p className='text-7xl -rotate-45'>🚀</p> */}
-            <Spline className='ms-24' scene="https://prod.spline.design/xoUr7qoY48j3Nnag/scene.splinecode" />
+            <Spline className='ms-10 sm:ms-24' scene="https://prod.spline.design/xoUr7qoY48j3Nnag/scene.splinecode" />
           </ParallaxLayer>
   
           {/* Page 1 - Sticky - Ernst & Young Description */}
@@ -50,7 +50,7 @@ export default function Experience() {
 
           {/* Page 2 - Sticky - Avensys Consulting Image */}
           <ParallaxLayer sticky={{ start: 2.4, end: 2.7 }} className='flex items-center justify-end'>
-              <img src='/MyImages/Experience/avensys.svg' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/avensys.svg' className='h-fill w-[25%] mr-8 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
   
           {/* Page 3 - Certification */}
@@ -63,7 +63,7 @@ export default function Experience() {
           {/* Page 3 - Studying */}
           <ParallaxLayer offset={4.2} speed={0.5} className='flex items-center justify-center ms-28'>
             {/* <p className='text-7xl rotate-90'>👨🏻‍💻</p> */}
-            <Spline className='ms-24' scene="https://prod.spline.design/66FwbbgkPvgY2i8L/scene.splinecode" />
+            <Spline className='ms-6 sm:ms-24' scene="https://prod.spline.design/66FwbbgkPvgY2i8L/scene.splinecode" />
           </ParallaxLayer>
   
           {/* Page 5 - Sticky - JFS Description */}
@@ -78,7 +78,7 @@ export default function Experience() {
 
           {/* Page 5 - Sticky - JFS Image */}
           <ParallaxLayer sticky={{ start: 5.4, end: 5.7 }} className='flex items-center justify-end'>
-              <img src='/MyImages/Experience/certificate.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/certificate.png' className='h-fill w-[25%] mr-8 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
 
           {/* Page 7 - Experience */}
@@ -91,7 +91,7 @@ export default function Experience() {
           {/* Page 7 - Graduation Hat */}
           <ParallaxLayer offset={7.2} speed={0.5} className='flex items-center justify-center ms-28'>
             {/* <p className='text-7xl rotate-45'>🎓</p> */}
-            <Spline className='ms-24' scene="https://prod.spline.design/dfhiLeKnWu3Dy1rn/scene.splinecode" />
+            <Spline className='ms-4 sm:ms-24' scene="https://prod.spline.design/dfhiLeKnWu3Dy1rn/scene.splinecode" />
           </ParallaxLayer>
   
           {/* Page 9 - Sticky - RMIT Description */}
@@ -105,7 +105,7 @@ export default function Experience() {
 
           {/* Page 9 - Sticky - RMIT Image */}
           <ParallaxLayer sticky={{ start: 8.4, end: 8.7 }} className='flex items-center justify-end'>
-              <img src='/MyImages/Experience/rmit.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/rmit.png' className='h-fill w-[25%] mr-8 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
           
           {/* Page 10 - Sticky - SP Description */}
@@ -121,14 +121,14 @@ export default function Experience() {
 
           {/* Page 10 - Sticky - SP Image */}
           <ParallaxLayer sticky={{ start: 9.4, end: 9.7 }} className='flex items-center justify-end'>
-              <img src='/MyImages/Experience/sp.png' className='h-fill w-[25%] mr-12 sm:mr-8 md:mr-8 lg:mr-32'></img>
+              <img src='/MyImages/Experience/sp.png' className='h-fill w-[25%] mr-6 sm:mr-8 md:mr-8 lg:mr-32'></img>
           </ParallaxLayer>
 
           {/* Page 11 - Spline */}
-          <ParallaxLayer sticky={{ start: 10, end: 11 }} className='flex items-center justify-end'>
+          {/* <ParallaxLayer sticky={{ start: 10, end: 11 }} className='flex items-center justify-end'> */}
             {/* Objects: https://app.spline.design/library */}
-            <Spline scene="https://prod.spline.design/ZW2z8ZdLvLcae643/scene.splinecode" />
-          </ParallaxLayer>
+            {/* <Spline scene="https://prod.spline.design/ZW2z8ZdLvLcae643/scene.splinecode" /> */}
+          {/* </ParallaxLayer> */}
       </Parallax>
     </div>
   )

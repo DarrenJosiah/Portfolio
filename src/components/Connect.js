@@ -43,7 +43,7 @@ export default function Connect() {
 
   return (
     // sm:flex-row = other than sm devices
-    <div className='connect-container font-spaceGrotesk h-auto pb-5 flex flex-row items-center'>
+    <div className='connect-container font-spaceGrotesk h-auto pb-5 flex flex-row items-center' id="connect">
     
       {/* Title */}
       <motion.div

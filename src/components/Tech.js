@@ -59,7 +59,7 @@ export default function Tech() {
             whileTap={{ scale: 0.9 }}
           >
             {/* Icon */}
-            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            <img className='float-right h-[6vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
@@ -125,7 +125,7 @@ export default function Tech() {
             whileTap={{ scale: 0.9 }}
           >
             {/* Icon */}
-            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            <img className='float-right h-[6vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
@@ -191,7 +191,7 @@ export default function Tech() {
             whileTap={{ scale: 0.9 }}
           >
             {/* Icon */}
-            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            <img className='float-right h-[6vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>
@@ -258,7 +258,7 @@ export default function Tech() {
             whileTap={{ scale: 0.9 }}
           >
             {/* Icon */}
-            <img className='float-right h-[7vh] w-auto' src={item.iconPath}/>
+            <img className='float-right h-[6vh] w-auto' src={item.iconPath}/>
             
             {/* Card */}
             <div className='shadow-2xl shadow-slate-600 max-w-sm bg-purple-700 p-5 rounded-xl m-3 w-[38vw] sm:w-[20vw]'>

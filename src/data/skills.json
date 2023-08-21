@@ -107,7 +107,7 @@
     {
         "name": "MySQL",
         "confidence": 70,
-        "confidenceTailwindCSS": "w-70%]",
+        "confidenceTailwindCSS": "w-[70%]",
         "type": "Database",
         "iconPath": "/MyImages/Tech/mysql.png"
     },
