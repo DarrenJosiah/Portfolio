@@ -46,15 +46,6 @@ export default function App() {
   );
 }
 
-// TODO
-// fonts too big, especially Home and Tech. Can standardise from Connect
-// projects navbar navigation doesn’t work
-// on mobile, threshold might be better at 50%
-// - add app icon for projects
-// ParticleJS
-
-// Clean up JSON
-
 // Last steps:
 // Clean up
 // Hide navigation paths

@@ -10,7 +10,7 @@ export default function Projects() {
       <p className='p-8'> &lt;PERSONAL PROJECTS /&gt;<span className='blink'>|</span></p>
       
       {/* Cards */}
-      <div className='flex flex-wrap justify-evenly items-start mx-8 sm:mx-0'>
+      <div className='flex flex-wrap justify-evenly items-start mx-8 sm:mx-1'>
         {  projects.map((project) => {
           return (
             <CustomTilt
@@ -31,7 +31,6 @@ export default function Projects() {
       */}
 
 
-      {/* <Particle></Particle> */}
 
 
         {/* Table */}
