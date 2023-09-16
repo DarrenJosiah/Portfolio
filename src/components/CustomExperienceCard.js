@@ -6,7 +6,7 @@ export default function CustomExperienceCard({title, organisation, date, descrip
         { organisation ? <p className="mb-3 text-xs sm:text-[1rem] text-gray-400">{organisation}</p> : null }
         { description1 ? <p className="mb-3 text-xs sm:text-[1rem] text-gray-400">{description1}</p> : null }
         { description2 ? <p className="mb-3 text-xs sm:text-[1rem] text-gray-400">{description2}</p> : null }
-        { description3 ? <p className="mb-3 text-xs sm:text-[1rem] text-gray-400">{description2}</p> : null }
+        { description3 ? <p className="mb-3 text-xs sm:text-[1rem] text-gray-400">{description3}</p> : null }
     </div>
   )
 }

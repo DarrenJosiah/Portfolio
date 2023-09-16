@@ -1,5 +1,19 @@
 [
     {
+      "title": "heyKANJI",
+      "description": "DOM Manipulation and jQuery AJAX GET Method to receive data. Picking up Pug, SASS and jQuery",
+        "tags": [
+          "Pug",
+          "SASS",
+          "jQuery"
+        ],
+        "estimatedCreationDate": "11/09/2023",
+        "estimatedCreationDuration": "6 days",
+        "link": "https://heykanji.onrender.com/",
+        "icon": "/MyImages/Projects/Icon/heykanji.png",
+        "preview": "/MyImages/Projects/Preview/heykanji.png"
+    },
+    {
         "title": "BLUETICKS",
         "description": "Fullstack React + Django application using CRUD with validations utilising Firebase. Developed in 7 days for an interview.",
         "tags": [

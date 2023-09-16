@@ -18,6 +18,13 @@ const skills = [
       "iconPath": "/MyImages/Tech/css.png"
   },
   {
+      "name": "SASS",
+      "confidence": 20,
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Frontend",
+      "iconPath": "/MyImages/Tech/sass.png"
+  },
+  {
       "name": "Bootstrap",
       "confidence": 80,
       "confidenceTailwindCSS": "w-[80%]",
@@ -37,6 +44,13 @@ const skills = [
       "confidenceTailwindCSS": "w-[70%]",
       "type": "Frontend",
       "iconPath": "/MyImages/Tech/javascript.png"
+  },
+  {
+      "name": "jQuery",
+      "confidence": 30,
+      "confidenceTailwindCSS": "w-[20%]",
+      "type": "Frontend",
+      "iconPath": "/MyImages/Tech/jquery.ico"
   },
   {
       "name": "TypeScript",
